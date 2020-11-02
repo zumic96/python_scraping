@@ -10,7 +10,7 @@ image = soup.select('.thumbimage')[0]
 
 image['src']
 
-image_link = requests.get(f"https:{image'src']}")
+image_link = requests.get(f"https:{image['src']}")
 
 f = open('test.jpg','wb')
 f.write(image_link.content)
