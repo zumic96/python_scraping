@@ -6,6 +6,12 @@ res = requests.get("https://hr.wikipedia.org/wiki/Deep_Blue")
 
 soup = bs4.BeautifulSoup(res.text,"lxml")
 
-image = soup.select('img')[0]
+image = soup.select('.thumbimage')[0]
 
-image
+image['src']
+
+image_link = requests.get(f"https:{image'src']}")
+
+f = open('test.jpg','wb')
+f.write(image_link.content)
+f.close()
